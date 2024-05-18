@@ -134,3 +134,61 @@
     transition: 0.3s;
     background: linear-gradient(267deg, #B923E1 -5.09%, #DA7C25 106.28%);
 }
+
+@media (max-width: 768px) {
+    .contact {
+        margin: 80px 50px;
+    }
+
+    .contact-title h1 {
+        font-size: 3em;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .contact-section {
+        gap: 50px;
+    }
+
+    .contact-left h2 {
+        font-size: 40px;
+    }
+
+    .contact-left p {
+        font-size: 18px;
+    }
+
+    .contact-detailes {
+        font-size: 18px;
+    }
+
+    .contact-detail p {
+        font-size: 16px;
+    }
+
+    .contact-right label {
+        font-size: 18px;
+    }
+
+    .contact-right input {
+        font-size: 18px;
+        width: 400px;
+    }
+
+
+    .contact-right textarea {
+        font-size: 18px;
+        width: 400px;
+    }
+
+    .contact-submit {
+        font-size: 18px;
+
+    }
+    
+
+    
+}
