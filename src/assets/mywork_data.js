@@ -52,7 +52,7 @@ const mywork_data = [
         w_desc:"This project is about Thai cuisine's recipes website.",
         w_note:"Note: It is a responsive website. ",
         w_built:"Built using HTML and CSS.",
-        w_more:"This project is about Thai cuisine's recipes website that show the recipes how to cook from my own recipes. The website is responsive and can be viewed on any device. ",
+        w_more:"This project is about Thai cuisine's recipes website that show the recipes how to cook from my o. The website is responsive and can be viewed on any device. ",
         w_img_url:"https://thai-cuisine.netlify.app/",
         w_img:project5_img
     },
