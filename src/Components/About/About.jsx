@@ -54,8 +54,8 @@ const About = () => {
               <p> Git & GitHub</p>
               <hr style= {{ width: "60%"}} />
             </div> 
-
           </div>
+
         </div>
       </div>
     
