@@ -10,13 +10,15 @@
   align-items: center;
   justify-content: space-around;
   margin: 2em 6em;
+  padding: 20px 0;
+  margin: 20px 170px;
 }
 
 .logo {
   display: block;
   position: fixed;
-  left: 30px;
-  width: 4em;
+  left: 2em;
+  width: 5em;
 }
 
 .nav-menu {
@@ -30,7 +32,10 @@
 
 .nav-menu a {
   text-decoration: none;
-  color: #B923E1;
+  background: linear-gradient(267deg, #DA7C25 50%, #B923E1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .nav-menu a:hover {
@@ -68,6 +73,7 @@
 @media(max-width: 768px) {
   .navbar {
     margin: 20px 50px;
+  
   }
 
   .nav-contact {
@@ -110,6 +116,28 @@
   .nav-menu a {
     font-size: 30px;
     padding-left: 100px;
+  }
+  
+}
+
+@media(max-width: 1024px) {
+
+  .navbar {
+    margin-top: 20px;
+
+  }
+
+  .nav-menu {
+    font-size: 1.5em;
+  }
+
+  .nav-contact {
+    padding: 10px 20px;
+    font-size: 1.5em;
+  }
+
+  .logo {
+    width: 4em;
   }
   
 }
