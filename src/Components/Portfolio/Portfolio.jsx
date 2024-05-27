@@ -13,7 +13,7 @@ const  Portfolio = () => {
   return (
     <div className='mywork'>
       <div className='mywork-title'>
-        <h1>Portfolio</h1>
+        <h1>My Projects</h1>
         <img src= {Pattern} alt='' />
       </div>
      
