@@ -1,7 +1,8 @@
-
+import React from 'react';
 import developer_image from '../../assets/profile.jpg';
 import './Home.css';
 import { NavLink } from 'react-router-dom';
+
 
 const Home = () => {
   return (
@@ -10,9 +11,8 @@ const Home = () => {
       <h1><span>Hi, I am Kunnikar Boonbunlu</span>  Front-end developer based in Stockholm, Sweden. </h1>
       <p>I am passionate about creating beautiful and functional websites. I am currently looking for a new role as a Front-end developer. </p>
         <div className='hero-action'>
-          <NavLink className='hero-connect'>Connect with me</NavLink>
-          <NavLink className='hero-resume'>My resume</NavLink>
-
+          <NavLink to='/Portfolio' className='hero-connect'> My Lastes projects </NavLink>
+          <NavLink to='/Testimonials' className='hero-resume'> Testimonials </NavLink>  
         </div>
 
     </div>

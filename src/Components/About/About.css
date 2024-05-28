@@ -123,36 +123,6 @@
   transition: 0.5s;
 }
 
-.about-testimonials {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  background-color: black;
-  padding: 2em;
-}
-
-.about-testimonial {
-  display: flex;
-  flex-direction: column;
-  margin: 0px 50px;
-  gap: 30px;
-}
-
-.about-testimonial p {
-  font-size: 2em;
-  font-weight: 700;
-  background: linear-gradient(190deg, #DA7C25 50.41%, #B923E1 92.8%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
- 
-h3 {
-  font-size: 1.5em;
-  font-weight: 500;
-  color: #DA7C25;
-  text-align: center;
-}
 
 @media (max-width: 768px) {
   .about {
