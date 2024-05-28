@@ -16,7 +16,7 @@ const Testimonials = () => {
       </div>
       <div className='about-testimonial'>
         <p> "She is a very talented developer who is very professional and easy to work with. I would highly recommend her for any web development project." </p>
-        <h3><IoIosStar /><IoIosStar /><IoIosStar /><IoIosStar /><IoIosStar /> Bruno Björn </h3>
+        <h3><IoIosStar /><IoIosStar /><IoIosStar /><IoIosStar /><IoIosStar /> Frank & Bruno </h3>
       </div>
       </div>
     </div>

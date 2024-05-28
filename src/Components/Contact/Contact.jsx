@@ -4,9 +4,11 @@ import Pattern from '../../assets/theme_pattern.svg';
 import mail_icon from '../../assets/mail_icon.svg';
 import call_icon from '../../assets/call_icon.svg';
 import location_icon from '../../assets/location_icon.svg';
+import Services from '../Services/Services';
 
 const Contact = () => {
   return (
+    <>
     <div className='contact'>
       <div className='contact-title'>
         <h1>Get in touch</h1>
@@ -31,7 +33,7 @@ const Contact = () => {
               <img src={location_icon} alt='location icon' />
               <p>Stockholm, Sweden</p>
             </div>
-
+            
           </div>
          </div> 
         <form className='contact-right'>
@@ -48,7 +50,10 @@ const Contact = () => {
 
         </form>
       </div>
+      
     </div>
+    <Services />
+    </>
   );
 }
 
