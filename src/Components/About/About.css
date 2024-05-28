@@ -5,7 +5,6 @@
   align-items: center;  
   gap: 80px;
   margin: 80px 170px;
-
 }
 
 .about-title {
@@ -29,6 +28,8 @@
 .about-sections {
   display: flex;
   gap: 80px;
+  background-color: black;
+  padding: 3em;
 }
 
 .about-left img {
@@ -50,7 +51,10 @@
   gap: 20px;
   font-size: 1.5em;
   font-weight: 500;
-  color: #DA7C25; 
+  background: linear-gradient(267deg, #DA7C25 30%, #B923E1 92.8%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .about-skills {
