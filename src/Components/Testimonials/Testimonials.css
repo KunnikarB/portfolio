@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: black;
+  padding: 2em;
+  margin: 30px 170px;
+}
+
+.about-testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: black;
+  padding: 2em;
+  margin: 0px 50px;
+}
+
+.about-testimonial {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 50px;
+  gap: 30px;
+}
+
+.about-testimonial p {
+  font-size: 2em;
+  font-weight: 700;
+  background: linear-gradient(190deg, #DA7C25 50.41%, #B923E1 92.8%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+ 
+h2 {
+  font-size: 3em;
+  font-weight: 500;
+  background: linear-gradient(167deg, #DA7C25 30%, #B923E1 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
