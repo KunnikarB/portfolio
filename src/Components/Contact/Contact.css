@@ -39,10 +39,10 @@
 .contact-left h2 {
     font-size: 60px;
     font-weight: 700;
-    background: linear-gradient(267deg, #DA7C25 80%, #B923E1 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background: linear-gradient(267deg, #DA7C25 50%, #B923E1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .contact-left p {

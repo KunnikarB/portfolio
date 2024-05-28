@@ -11,10 +11,10 @@
   position: relative;
 }
 
-h2 {
+.title {
   font-size: 3em;
   font-weight: 600;
-  background: linear-gradient(267deg, #DA7C25 80%, #B923E1 50%);
+  background: linear-gradient(220deg, #DA7C25 60%, #B923E1 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

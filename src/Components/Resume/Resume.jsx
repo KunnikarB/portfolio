@@ -14,7 +14,7 @@ const Resume = () => {
         <img src={Pattern} alt='Pink pattern color' />
       </div>
       
-      <h2>Education</h2>
+      <h2 className='title'>Education</h2>
       <div className='services-container'>
         {education_data.map((edu,index) => {
           return (
@@ -27,7 +27,7 @@ const Resume = () => {
           );
         })}
       </div>
-      <h2>Work Experience</h2>
+      <h2 className='title'>Work Experience</h2>
       <div className='services-container'>
         {works_data.map((work,index) => {
           return (
@@ -40,7 +40,7 @@ const Resume = () => {
           );
         })}
     </div>
-    <h2>Skills</h2>
+    <h2 className='title'>Skills</h2>
       <div className='services-container'>
         {skills_data.map((skill,index) => {
           return (
