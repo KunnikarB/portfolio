@@ -4,7 +4,9 @@ import Pattern from '../../assets/theme_pattern.svg';
 import education_data from '../../assets/education_data';
 import works_data from '../../assets/works_data';
 import skills_data from '../../assets/skills_data';
-
+import { PiStudentFill } from "react-icons/pi";
+import { SiWorkplace } from "react-icons/si";
+import { FaLaptopCode } from "react-icons/fa";
 
 const Resume = () => {
   return (
@@ -14,7 +16,7 @@ const Resume = () => {
         <img src={Pattern} alt='Pink pattern color' />
       </div>
       
-      <h2 className='title'>Education</h2>
+      <h2 className='title'><PiStudentFill /> Education</h2>
       <div className='services-container'>
         {education_data.map((edu,index) => {
           return (
@@ -27,7 +29,7 @@ const Resume = () => {
           );
         })}
       </div>
-      <h2 className='title'>Work Experience</h2>
+      <h2 className='title'><SiWorkplace /> Work Experience</h2>
       <div className='services-container'>
         {works_data.map((work,index) => {
           return (
@@ -40,7 +42,7 @@ const Resume = () => {
           );
         })}
     </div>
-    <h2 className='title'>Skills</h2>
+    <h2 className='title'><FaLaptopCode /> Skills</h2>
       <div className='services-container'>
         {skills_data.map((skill,index) => {
           return (

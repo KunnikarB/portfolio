@@ -1,10 +1,13 @@
 
+
 .hero {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 35px;
+  background-color: black;
+  margin: 80px 170px;
 }
 
 .hero img {
@@ -17,7 +20,6 @@
 
 .hero h1 {
   text-align: center;
-  width: 70%;
   font-size: 2em;
   font-weight: 600;
   line-height: 1.5em;
@@ -32,12 +34,18 @@
   font-size: 2em;
 }
 
+.hero h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #B923E1;
+}
+
 .hero p {
   text-align: center;
   width: 50%;
   font-size: 1.5em;
   line-height: 40px;
-  color: #DA7C25;
+  color: #fff;
   font-weight: 500;
 }
 
