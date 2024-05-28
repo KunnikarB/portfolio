@@ -20,8 +20,8 @@ const Footer = () => {
             <p className='footer-bottom-left'>© 2024 KunnikarB All rights reserved</p>
           
             <div className='footer-bottom-right'>
-              <a href='https://www.linkedin.com/in/kunnikar/'><FaGithub /></a>
-              <a href='https://github.com/KunnikarB'><FaLinkedinIn /></a>
+              <a href='https://www.linkedin.com/in/kunnikar/'><FaLinkedinIn /></a>
+              <a href='https://github.com/KunnikarB'><FaGithub /></a>
               <a href='https://www.instagram.com/kunnikar_b/'><FaInstagram /></a>
             </div>
  
