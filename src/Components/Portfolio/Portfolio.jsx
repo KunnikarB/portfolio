@@ -25,10 +25,10 @@ const  Portfolio = () => {
                 <p>{work.w_desc}</p>
                 <p>{work.w_note}</p>
                 <p>{work.w_built}</p>
-                <div className='mywork-showmore'> 
-                <p onClick={work.w_more}>showmore<MdExpandMore /> 
-                </p>
-                </div>
+                <details> 
+                  <summary>Show More</summary>
+                  <p> {work.w_more}</p>
+                </details>
                 <a href={work.w_img_url}><img key={index} src={work.w_img} alt='Link image to my project' title='Click to see my project' /></a>
               </div>
             )
