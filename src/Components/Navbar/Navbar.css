@@ -18,7 +18,7 @@
   display: block;
   position: fixed;
   left: 2em;
-  width: 5em;
+  width: 1em;
 }
 
 .nav-menu {
@@ -70,14 +70,90 @@
   display: none;
 }
 
-@media(max-width: 500px) {
+
+ @media (max-width: 2256px){
+  .nav-menu {
+    font-size: 2em;
+    margin-left: 2em;
+  }
+
+  .nav-menu a:hover {
+    transform: scale(1.2);
+  }
+
+  .nav-contact {
+    padding: 20px 40px;
+    font-size: 2em;
+    margin-left: 2em;
+  }
+
+  .logo {
+    width: 6em;
+  }
+}
+
+@media(max-width: 1024px) {
+
+  .navbar {
+    margin-top: 20px;
+
+  }
+
+  .nav-menu {
+    font-size: 1.5em;
+  }
+
+  .nav-menu a:hover {
+    transform: scale(1.2);
+  }
+
+  .nav-contact {
+    padding: 10px 20px;
+    font-size: 1.5em;
+  }
+
+  .logo {
+    width: 4em;
+  }
+  
+} 
+
+@media(max-width: 768px) {
+  .navbar {
+    margin-top: 20px;
+  }
+
+  .nav-menu {
+    font-size: 1.3em;
+    
+  }
+
+  .nav-menu a:hover {
+    transform: scale(1.2);
+  }
+
+  .nav-contact {
+    padding: 10px 20px;
+    font-size: 0.8em;
+    margin-left: 2em;
+  }
+
+  .logo {
+    width: 4em;
+  }
+  
+}
+
+
+@media screen and (max-width: 500px) {
   .navbar {
     margin: 20px 50px;
   
   }
 
   .nav-contact {
-    display: none;
+    padding: 10px 20px;
+    font-size: 0.8em;
   }
 
   .nav-mob-open {
@@ -117,78 +193,16 @@
     font-size: 30px;
     padding-left: 100px;
   }
-  
-}
-
-@media(max-width: 768px) {
-  .navbar {
-    margin-top: 20px;
-  }
-
-  .nav-menu {
-    font-size: 1.5em;
-  }
 
   .nav-menu a:hover {
     transform: scale(1.2);
-  }
-
-  .nav-contact {
-    padding: 10px 20px;
-    font-size: 1em;
-    margin-left: 1em;
+    
   }
 
   .logo {
-    width: 4em;
-  }
-  
-}
-
-@media(max-width: 1024px) {
-
-  .navbar {
-    margin-top: 20px;
-
-  }
-
-  .nav-menu {
-    font-size: 1.5em;
-  }
-
-  .nav-menu a:hover {
-    transform: scale(1.2);
-  }
-
-  .nav-contact {
-    padding: 10px 20px;
-    font-size: 1.5em;
-  }
-
-  .logo {
-    width: 4em;
-  }
-  
-}
-
-@media (max-width: 2256px){
-  .nav-menu {
-    font-size: 2.5em;
-    margin-left: 2em;
-  }
-
-  .nav-menu a:hover {
-    transform: scale(1.2);
-  }
-
-  .nav-contact {
-    padding: 20px 40px;
-    font-size: 2.5em;
-    margin-left: 2em;
-  }
-
-  .logo {
-    width: 6em;
+    left: 30px;
+    width: 3em;
   }
 }
+
 
