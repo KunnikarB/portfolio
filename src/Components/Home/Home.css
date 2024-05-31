@@ -42,7 +42,6 @@
 
 .hero p {
   text-align: center;
-  width: 50%;
   font-size: 1.5em;
   line-height: 40px;
   color: #fff;
@@ -93,71 +92,12 @@
   color: #fff;
 }
 
-@media (max-width: 500px) {
-  .hero {
-    
-    margin: auto;
-    
-  }
-  .hero img {
-    display: block;
-    max-width: 100%;
-    min-width: 100px;
-  }
-
-  .hero h1 {
-    font-size: 1em;
-
-  }
-
-  .hero p {
-    font-size: 1.2em;
-    width: 100%;
-    padding: 5px;
-  
-  }
-
-  .hero .hero-action {
-    font-size: 20px;
-    display: block;
-    margin-top: 2em;
-  }
-
-  .hero .hero-resume {
-    display: block;
-    margin-top: 2em;
-    width: 90%;
-  }
-  
-  .hero h2 {
-    font-size: 1.2em;
-  }
-}
-
-
-@media screen and  (max-width: 768px) {
-  .hero {
-    width: 100%;
-  }
-  .hero img {
-    display: block;
-    max-width: 100%;
-  }
-
-  .hero h1 {
-    font-size: 1.5em;
-  }
-
+@media screen and  (max-width: 2256px){
   .hero p {
     font-size: 1.2em;
     width: 60%;
     padding: 5px;
   }
-
-  .hero .hero-action {
-    font-size: 20px;
-    margin-top: 2em;
-  } 
 }
 
 @media screen and  (max-width: 1024px) {
@@ -185,3 +125,70 @@
   } 
   
 }
+
+@media screen and  (max-width: 768px) {
+  .hero {
+    width: 100%;
+  }
+  .hero img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 1.5em;
+  }
+
+  .hero p {
+    font-size: 1.2em;
+    width: 80%;
+    padding: 5px;
+  }
+
+  .hero .hero-action {
+    font-size: 20px;
+    margin-top: 2em;
+  } 
+}
+
+@media (max-width: 500px) {
+  .hero {
+    margin: auto;
+  }
+
+  .hero img {
+    display: block;
+    max-width: 100%;
+    min-width: 100px;
+  }
+
+  .hero h1 span{
+    font-size: 1em;
+  }
+
+  .hero p {
+    font-size: 1em;
+    width: 70%;
+    padding: 5px;
+  }
+
+  .hero .hero-action {
+    font-size: 1em;
+    display: block;
+    margin-top: 2em;
+  }
+
+  .hero .hero-resume {
+    display: block;
+    margin-top: 2em;
+    width: 90%;
+  }
+  
+  .hero h2 {
+    font-size: 1em;
+  }
+}
+
+
+
+
