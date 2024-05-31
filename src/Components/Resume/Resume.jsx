@@ -29,7 +29,9 @@ const Resume = () => {
           );
         })}
       </div>
+
       <h2 className='title'><SiWorkplace /> WORK EXPERIENCE</h2>
+      
       <div className='services-container'>
         {works_data.map((work,index) => {
           return (
