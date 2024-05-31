@@ -207,3 +207,52 @@
     }  
     
 }
+
+@media (max-width: 350px) {
+    .contact {
+        margin: 0;
+        width: 100%;
+    }
+
+    .contact-title h1 {
+        font-size: 1em;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .contact-section {
+        gap: 50px;
+    }
+
+    .contact-left h2 {
+        font-size: 40px;
+    }
+
+    .contact-left p {
+        font-size: 18px;
+        
+    }
+
+    .contact-detailes {
+        font-size: 18px;
+    }
+
+    .contact-detail p {
+        font-size: 16px;
+    }
+
+    .contact-right label {
+        font-size: 18px;
+        margin: auto;
+    }
+
+    .contact-right input {
+        font-size: 18px;
+        width: 300px;
+        margin: auto;
+
+    }
+}
