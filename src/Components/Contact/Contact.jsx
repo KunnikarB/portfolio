@@ -2,7 +2,6 @@ import React from 'react';
 import './Contact.css';
 import Pattern from '../../assets/theme_pattern.svg';
 import mail_icon from '../../assets/mail_icon.svg';
-import call_icon from '../../assets/call_icon.svg';
 import location_icon from '../../assets/location_icon.svg';
 import Services from '../Services/Services';
 
@@ -33,6 +32,7 @@ const Contact = () => {
             
           </div>
          </div> 
+         
         <form className='contact-right'>
           <label htmlFor='name'>Your Name</label>
           <input type='text' id='name' name='name' placeholder='Enter your name' required />

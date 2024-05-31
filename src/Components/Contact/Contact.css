@@ -149,13 +149,13 @@
     background: linear-gradient(267deg, #B923E1 -5.09%, #DA7C25 106.28%);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     .contact {
         margin: 80px 50px;
     }
 
     .contact-title h1 {
-        font-size: 3em;
+        font-size: 2em;
     }
 
     .contact-section {
@@ -185,24 +185,25 @@
 
     .contact-right label {
         font-size: 18px;
+        margin: auto;
     }
 
     .contact-right input {
         font-size: 18px;
-        width: 400px;
+        width: 300px;
+        margin: auto;
     }
 
 
     .contact-right textarea {
         font-size: 18px;
-        width: 400px;
+        width: 300px;  
+        margin: auto; 
     }
 
     .contact-submit {
         font-size: 18px;
 
-    }
-    
-
+    }  
     
 }
