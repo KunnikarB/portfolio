@@ -127,23 +127,102 @@
   transition: 0.5s;
 }
 
-
-@media (max-width: 768px) {
+@media screen and (max-width: 768px){
   .about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;  
+    gap: 80px;
+    margin: 80px 50px;
+  }
+  
+  .about-title h1 {
+    font-size: 2.5em;
+  }
+
+  .about-title img {
+    width: 50%; 
+  }
+
+  .about-sections {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 80px;
-    margin: 80px 50px;
+  }
+
+  .about-left img {
+    width: 50%;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+  }
+
+  .about-para {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #DA7C25;
+  }
+
+  .about-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-skill {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    transition: 0.3s;
+    font-family: "Lilita One", sans-serif;
+    color: #B923E1;
+  }
+
+  .about-skill:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+
+  .about-skill p {
+    min-width: 150px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .about-skill hr {
+    outline: none;
+    border: none;
+    width: 50%;
+    height: 8px;
+    border-radius: 50%;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  }
+}
+
+
+@media (max-width: 500px) {
+  .about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;  
+    gap: 80px;
+    margin: 80px 20px;
+
   }
 
   .about-title h1 {
-    font-size: 3em;
+    font-size: 1.5em;
     padding: 0px 30px;
   }
 
   .about-title img {
-    width: 60%;
+    width: 50%;
   }
 
   .about-sections {
