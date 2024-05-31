@@ -25,10 +25,7 @@ const Contact = () => {
               <img src={mail_icon} alt='mail icon' />
               <p>kunnikarboon@gmail.com</p>
             </div>
-            <div className='contact-detail'>
-              <img src={call_icon} alt='call icon' />
-              <p>+46 999 999 9999</p>
-            </div>
+            
             <div className='contact-detail'>
               <img src={location_icon} alt='location icon' />
               <p>Stockholm, Sweden</p>
