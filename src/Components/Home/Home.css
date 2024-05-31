@@ -93,31 +93,45 @@
   color: #fff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+  .hero {
+    
+    margin: auto;
+    
+  }
   .hero img {
-    width: 260px;
-    height: 30%;
-    margin-bottom: 2.5em ;
+    display: block;
+    max-width: 100%;
+    min-width: 100px;
   }
 
   .hero h1 {
-    font-size: 1.3em;
+    font-size: 1em;
+
   }
 
   .hero p {
-    font-size: 1em;
+    font-size: 1.2em;
+    width: 100%;
+    padding: 5px;
+  
   }
 
-  .hero-action {
+  .hero .hero-action {
     font-size: 20px;
+    display: block;
+    margin-top: 2em;
   }
 
-  .hero-connect {
-    padding: 15px 30px;
-  }
-
-  .hero-resume {
-    padding: 15px 40px;
+  .hero .hero-resume {
+    display: block;
+    margin-top: 2em;
+    width: 90%;
   }
   
+  .hero h2 {
+    font-size: 1.2em;
+  }
+
+
 }
