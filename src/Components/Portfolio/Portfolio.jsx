@@ -29,7 +29,7 @@ const  Portfolio = () => {
                   <summary>Show More</summary>
                   <p> {work.w_more}</p>
                 </details>
-                <a href={work.w_img_url}><img key={index} src={work.w_img} alt='Link image to my project' title='Click to see my project' /></a>
+                <a href={work.w_img_url} target='_blank'><img key={index} src={work.w_img} alt='Link image to my project' title='Click to see my project' /></a>
               </div>
             )
           })}
