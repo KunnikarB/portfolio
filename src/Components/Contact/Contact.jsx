@@ -9,15 +9,11 @@ const Contact = () => {
   return (
     <>
     <div className='contact'>
-      <div className='contact-title'>
-        <h1>Get in touch</h1>
-        <img src={Pattern} alt='Pink pattern color' /> 
-      </div>
-
+    
       <div className='contact-section'>
         <div className='contact-left'>
           <h2>Let&apos;s talk</h2>
-          <p>I am currently avaliable to take on new projets. Feel free to reach out to me for any queries or just to say hi! </p>
+          <p className='para'>I am currently avaliable to take on new projets. Feel free to reach out to me for any queries or just to say hi! </p>
 
           <div className='contact-details'>
             <div className='contact-detail'>

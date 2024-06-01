@@ -149,7 +149,7 @@
     background: linear-gradient(267deg, #B923E1 -5.09%, #DA7C25 106.28%);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1440px) {
     .contact {
         margin: 80px 50px;
     }
@@ -190,14 +190,16 @@
 
     .contact-right input {
         font-size: 18px;
-        width: 300px;
+        min-width: 300px;
+        width: 100%;
         margin: auto;
     }
 
 
     .contact-right textarea {
         font-size: 18px;
-        width: 300px;  
+        min-width: 300px;  
+        width: 100%;
         margin: auto; 
     }
 
@@ -224,17 +226,14 @@
         gap: 50px;
     }
 
-    .contact-section {
-        gap: 50px;
-    }
 
     .contact-left h2 {
         font-size: 40px;
     }
 
-    .contact-left p {
+    .contact-section .contact-left .para {
         font-size: 18px;
-        
+        padding: 1em;
     }
 
     .contact-detailes {
