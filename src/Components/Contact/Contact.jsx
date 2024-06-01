@@ -6,6 +6,31 @@ import location_icon from '../../assets/location_icon.svg';
 import Services from '../Services/Services';
 
 const Contact = () => {
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "08960ab7-6f3e-4d53-991f-63dfda92daa9");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
+
   return (
     <>
     <div className='contact'>
@@ -29,7 +54,7 @@ const Contact = () => {
           </div>
          </div> 
          
-        <form className='contact-right'>
+        <form onSubmit={onSubmit} className='contact-right'>
           <label htmlFor='name'>Your Name</label>
           <input type='text' id='name' name='name' placeholder='Enter your name' required />
 
