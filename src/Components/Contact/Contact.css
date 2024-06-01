@@ -190,16 +190,14 @@
 
     .contact-right input {
         font-size: 18px;
-        min-width: 300px;
-        width: 100%;
+        width: 300px;
         margin: auto;
     }
 
 
     .contact-right textarea {
         font-size: 18px;
-        min-width: 300px;  
-        width: 100%;
+        width: 300px;  
         margin: auto; 
     }
 
@@ -210,7 +208,7 @@
     
 }
 
-@media (max-width: 350px) {
+@media (max-width: 420px) {
     .contact {
         margin: 0;
         width: 100%;
@@ -252,7 +250,10 @@
     .contact-right input {
         font-size: 18px;
         width: 300px;
-        margin: auto;
+    }
 
+    .contact-right textarea {
+        font-size: 18px;
+        width: 300px;
     }
 }
