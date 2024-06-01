@@ -1,18 +1,18 @@
 import React from 'react';
 import './Contact.css';
-import Pattern from '../../assets/theme_pattern.svg';
 import mail_icon from '../../assets/mail_icon.svg';
 import location_icon from '../../assets/location_icon.svg';
 import Services from '../Services/Services';
 
 const Contact = () => {
+  const [result, setResult] = React.useState("");
 
   const onSubmit = async (event) => {
     event.preventDefault();
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "08960ab7-6f3e-4d53-991f-63dfda92daa9");
+    formData.append("access_key", "52419ba3-6a38-4f48-bc72-57269deb7428");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -43,7 +43,7 @@ const Contact = () => {
           <div className='contact-details'>
             <div className='contact-detail'>
               <img src={mail_icon} alt='mail icon' />
-              <p>kunnikarboon@gmail.com</p>
+              <p>kunnikarbcreative@gmail.com</p>
             </div>
             
             <div className='contact-detail'>
@@ -67,6 +67,7 @@ const Contact = () => {
           <button className='contact-submit' type='submit'>Submit</button>
 
         </form>
+        <span>{result}</span>
       </div>
       
     </div>
