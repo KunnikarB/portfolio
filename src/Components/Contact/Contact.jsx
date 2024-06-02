@@ -36,7 +36,7 @@ const Contact = () => {
       <div className='contact-section'>
         <div className='contact-left'>
           <h2>Let&apos;s talk</h2>
-          <p className='para'>I am currently avaliable to take on new projets. Feel free to reach out to me for any queries or just to say hi! </p>
+          <p>I am currently avaliable to take on new projets. Feel free to reach out to me for any queries or just to say hi! </p>
 
           <div className='contact-details'>
             <div className='contact-detail'>
@@ -50,7 +50,7 @@ const Contact = () => {
             </div>
             
           </div>
-         </div> 
+        </div> 
          
         <form className='contact-right'>
           <label htmlFor='name'>Your Name</label>
