@@ -88,7 +88,7 @@
   transition: 0.4s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .services {
     margin: 80px 20px;
     
@@ -99,7 +99,7 @@
   }
 
   .services-title img {
-    width: 60%;
+    width: 80%;
   }
 
   .services-container {
