@@ -3,32 +3,30 @@ import './Contact.css';
 import mail_icon from '../../assets/mail_icon.svg';
 import location_icon from '../../assets/location_icon.svg';
 import Services from '../Services/Services';
+import { useEffect, useRef, useState } from "react";
+import HCaptcha from "@hcaptcha/react-hcaptcha";
 
 const Contact = () => {
-  const [result, setResult] = React.useState("");
+  const [token, setToken] = useState(null);
+  const captchaRef = useRef(null);
 
-  const onSubmit = async (event) => {
-    event.preventDefault();
-    setResult("Sending....");
-    const formData = new FormData(event.target);
+  const onLoad = () => {
+    // this reaches out to the hCaptcha JS API and runs the
+    // execute function on it. you can use other functions as
+    // documented here:
+    // https://docs.hcaptcha.com/configuration#jsapi
 
-    formData.append("access_key", "52419ba3-6a38-4f48-bc72-57269deb7428");
-
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData
-    });
-
-    const data = await response.json();
-
-    if (data.success) {
-      setResult("Form Submitted Successfully");
-      event.target.reset();
-    } else {
-      console.log("Error", data);
-      setResult(data.message);
-    }
+    captchaRef.current.execute();
   };
+
+  useEffect(() => {
+
+    if (token)
+      console.log(`hCaptcha Token: ${token}`);
+
+  }, [token]);
+
+  
 
 
   return (
@@ -54,7 +52,7 @@ const Contact = () => {
           </div>
          </div> 
          
-        <form onSubmit={onSubmit} className='contact-right'>
+        <form className='contact-right'>
           <label htmlFor='name'>Your Name</label>
           <input type='text' id='name' name='name' placeholder='Enter your name' required />
 
@@ -64,10 +62,17 @@ const Contact = () => {
           <label htmlFor='message'>Your Message</label>
           <textarea id='message' name='message' placeholder='Enter your message' rows='8' required />
 
+          <HCaptcha className='captcha'
+        sitekey="2c82124e-ac81-4723-a175-1faab7e98294"
+        onLoad={onLoad}
+        onVerify={setToken}
+        ref={captchaRef}
+      />
+
           <button className='contact-submit' type='submit'>Submit</button>
 
         </form>
-        <span>{result}</span>
+        
       </div>
       
     </div>
